@@ -1,0 +1,34 @@
+.tooltype-error
+  position: absolute
+  bottom: calc(100% + 9px)
+  left: 0
+  right: 0
+  .tooltype-body
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 40px
+    width: 65%
+    padding: 8px 24px
+    margin: auto
+    border-radius: 4px
+    text-align: center
+    background-color: #E15433
+    box-sizing: border-box
+    color: #fff
+  &:after
+    content: ""
+    top: 100%
+    left: 50%
+    position: absolute
+    height: 0
+    width: 0
+    border: 9px solid
+    border-color: #E15433 rgba(255, 212, 52, 0) rgba(255, 212, 52, 0)
+    margin-left: -9px
+@media screen and (max-width: 768px)
+  .tooltype-error
+    position: relative
+    margin-bottom: 10px
+    .tooltype-body
+      width: 100%

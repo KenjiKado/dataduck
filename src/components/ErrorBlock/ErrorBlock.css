@@ -1,0 +1,12 @@
+.error-block {
+  display: block;
+  margin: 10px 0;
+  padding: 8px 32px 8px 64px;
+  border-radius: 4px;
+  line-height: 24px;
+  background-color: #E15433;
+  background-image: url("../../images/attention.png");
+  background-position: 24px center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  color: #fff; }

@@ -1,0 +1,86 @@
+.input-row
+  width: 100%
+  min-height: 64px
+  input
+    &[type="text"], &[type="email"], &[type="password"]
+      width: 100%
+      height: 100%
+      padding: 32px 24px 8px
+      border: none
+      border-radius: 4px
+      background-color: rgba(#F5F8FA, .1)
+      box-sizing: border-box
+      color: #fff
+      outline: none
+      &+label
+        display: block
+        width: 100%
+        padding: 0 24px
+        transform: translateY(-40px)
+        box-sizing: border-box
+        color: #7A8F99
+        transition: all ease-out 0.3s
+        cursor: text
+      &:focus, &:not(:placeholder-shown)
+        border: 1px solid #20A86B
+        &+label
+          transform: translateY(-52px)
+          font-size: 12px
+      &.error
+        border: 1px solid #E15433
+      &:-webkit-autofill
+        -webkit-box-shadow: inset 0 0 0 50px #212d3e !important
+        -webkit-text-fill-color: #fff !important
+        color: #fff !important
+.radio-row
+  input
+    &[type="radio"]
+      display: none
+      height: 0
+      width: 0
+      opacity: 0
+      &+span
+        display: block
+        width: 100%
+        position: relative
+        height: 32px
+        text-align: center
+        line-height: 32px
+        background-color: rgba(#F5F8FA, .1)
+        color: #7A8F99
+        cursor: pointer
+        &:after
+          content: ''
+          position: absolute
+          width: 1px
+          height: 24px
+          right: 0
+          top: 0
+          bottom: 0
+          margin: auto
+          background-color: #0b172a
+      &:checked
+        &+span
+          border: 1px solid #20A86B
+          background-color: #0b172a
+          &:after
+            content: none
+.checkbox-row
+  input
+    &[type="checkbox"]
+      display: block
+      height: 0
+      width: 0
+      opacity: 0
+      &+label
+        display: block
+        width: 32px
+        height: 32px
+        border-radius: 4px
+        background-color: rgba(#F5F8FA, .1)
+        cursor: pointer
+      &:checked
+        &+label
+          background-image: url('../../images/check.png')
+          background-position: center center
+          background-repeat: no-repeat
